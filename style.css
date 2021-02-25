@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0;
+  background: #ffedc3; 
+}
+
+body p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 30px auto;
+  display: flex;
+}
+
+/* START HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  background: #ffedc3;
+  padding: 20px;
+}
+.header h1 {
+  text-align: center;
+  color: #101010;
+  font-size: 48px;
+  flex-grow: 2;
+}
+/* END HEADER */
+
+/* START ASIDE*/
+.aside {
+  min-width: 200px;
+}
+.aside a {
+  text-decoration: none;
+  color: #f35acb;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+}
+.aside li {
+  list-style-type: none;
+}
+/* END ASIDE*/
+
+/* START CONTENT */
+.content {
+  display: flex;
+}
+.content p {
+  text-align: justify;
+}
+.content img {
+  min-height: 100px;
+  min-width: 100px;
+  padding: 0 20px;
+}
+/* END CONTENT */
+
+.main {
+  background: white;
+  border-radius: 15px;
+}
+
+.section {
+  margin: 30px;
+}
+
+.pinkiiie {
+  color:#f35acb;
+}
+
+@media (max-width: 1000px) {
+  .aside {
+    display: none; 
+  }
+}
